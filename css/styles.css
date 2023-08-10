@@ -47,11 +47,25 @@ body {
 }
 
 .content #key-code {
-  font-weight: 500;
   font-size: 12rem;
+  font-weight: 500;
 }
 
 .content #key {
-  font-weight: 300;
   font-size: 2rem;
+  font-weight: 300;
+}
+
+@media (prefers-color-scheme: light) {
+  body {
+    background: var(--white);
+    color: var(--black);
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background: var(--black);
+    color: var(--white);
+  }
 }
