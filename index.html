@@ -4,16 +4,16 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>qwerty69</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <script defer src="js/script.js"></script>
   </head>
   <body>
-    <div id="key-code">press any key</div>
+    <div class="container">
+      <div id="help-message">Press any key to know the Key Code</div>
+      <div class="content">
+        <div id="key-code"></div>
+        <div id="key"></div>
+      </div>
+    </div>
   </body>
-  <script>
-    const pressedKey = document.getElementById("key-code");
-    document.addEventListener("keydown", function (event) {
-      pressedKey.innerHTML = `${
-        "KEY: " + event.key + "," + "KEY CODE: " + event.keyCode
-      }`;
-    });
-  </script>
 </html>
